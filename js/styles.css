@@ -47,14 +47,45 @@ main {
     margin-right: auto;
 }
 
+#about {
+    display: contents;
+    background-image: url("C:\Users\matth\OneDrive\Documents\GitHub\My-Portfolio-Website\images\home_background.jpg");
+}
+
+#about h2 {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#about p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;  
+}
+
+#about-paragraph {
+    text-align: left;
+    max-width: 25%;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 100px;
+}
+
 footer {
     text-align: center;
     padding-bottom: 25px;
 }
 
-nav {
-    border-radius: 25px;
-    padding: 20px 20px;
+#nav {
+    display: flex;               /* Flexbox for aligning nav items horizontally */
+    justify-content: center;     /* Center the navigation items */
+    padding: 10px;               /* Padding around the navbar */
+    border-radius: 25px;         /* Rounded corners for navbar */
 }
 
 ul {
@@ -66,17 +97,18 @@ ul {
 }
 
 li {
-    margin: 0 20px; /* Adds spacing between the items */
+    margin: 20px; /* Adds spacing between the items */
 }
 
-a {
+.nav-link {
     text-decoration: none; /* Removes the underline from links */
     border-radius: 25px;
     color: black; /* Changes the text color */
     font-weight: bold; /* Makes the text bold */
     font-size: 16px; /* Adjusts the text size */
-    display: block;
-    padding: 10px 15px; /* Adds some padding inside the links */
+    display: inline-block;
+    margin: 0 5px;
+    padding: 20px 20px; /* Adds some padding inside the links */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -94,7 +126,7 @@ a {
 }
 
 /* This makes the active link appear darker (hover effect) */
-a:hover, a:focus {
+.nav-link:hover, .nav-link:focus {
     background-color: grey;
     color: white;
 }
