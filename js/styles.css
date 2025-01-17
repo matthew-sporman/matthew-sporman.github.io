@@ -1,30 +1,19 @@
-section {
-    display: none
-}
-
-/* Body takes full viewport height */
 body {
     display: flex;
-    flex-direction: column;   /* Arrange children (header, main, footer) in a column */
-    min-height: 100vh;         /* Make the body at least 100% of the viewport height */
-    margin: 0;                 /* Remove default margin */
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
     font-family: 'Edu AU VIC WA NT Pre', sans-serif;
 }
 
-/* Main content can grow to take up remaining space */
 main {
-    flex-grow: 1;              /* This makes the main section grow to take remaining space */
-}
-
-#home {
-    display: contents;
-    background-image: url("C:\Users\matth\OneDrive\Documents\GitHub\My-Portfolio-Website\images\home_background.jpg");
+    flex-grow: 1;
 }
 
 #home h2 {
-    font-size: 100px;           /* Adjust the font size */
-    font-weight: bold;         /* Make the font bold */
-    text-align: center;        /* Center-align the text */
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
     margin: 0 auto;
     margin-top: 100px;
     background-color: #00B4D8;
@@ -76,28 +65,98 @@ main {
     padding: 100px;
 }
 
+#contact {
+    display: flex;                  
+    justify-content: center; 
+    align-items: center;       
+    min-height: 100vh;          
+    margin: 0;
+}
+
+#contact form {
+    border: 5px solid #ccc;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: inherit;
+    align-items: center;
+    display: grid;
+    place-items: left;
+    max-width: 750px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form label {
+    text-align: start;
+    margin-right: 10px;
+    vertical-align: top;
+    max-width: 750px;
+}
+
+form input, form textarea {
+    width: -webkit-fill-available;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: 'Edu AU VIC WA NT Pre', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+form button {
+    padding: 20px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Edu AU VIC WA NT Pre', sans-serif;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+form button:hover {
+    background-color: grey;
+}
+
+input[type="text"], input[type="email"] {
+    font-family: 'Edu AU VIC WA NT Pre', sans-serif;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 20px 20px;
+    font-size: 16px;
+}
+
 footer {
     text-align: center;
     padding-bottom: 25px;
 }
 
 #nav {
-    display: flex;               /* Flexbox for aligning nav items horizontally */
-    justify-content: center;     /* Center the navigation items */
-    padding: 10px;               /* Padding around the navbar */
-    border-radius: 25px;         /* Rounded corners for navbar */
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 25px;
 }
 
 ul {
-    list-style-type: none; /* Removes the default list bullet points */
-    display: flex; /* Makes the list items display horizontally */
+    list-style-type: none;
+    display: flex;
     padding: 0;
     margin: 0;
-    justify-content: center; /* Centers the list items horizontally */
+    justify-content: center;
 }
 
 li {
-    margin: 20px; /* Adds spacing between the items */
+    margin: 20px;
 }
 
 .nav-link {
