@@ -36,41 +36,17 @@ main {
     margin-right: auto;
 }
 
-#about {
-    display: contents;
-    background-image: url("C:\Users\matth\OneDrive\Documents\GitHub\My-Portfolio-Website\images\home_background.jpg");
-}
-
 #about h2 {
-    display: block;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-}
-
-#about p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;  
-}
-
-#about-paragraph {
-    text-align: left;
-    max-width: 25%;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 100px;
+    font-size: 25px;
 }
 
 #contact {
     display: flex;                  
     justify-content: center; 
-    align-items: center;       
-    min-height: 100vh;          
-    margin: 0;
+    align-items: center;  
+    margin-top: 80px;        
+    padding: 20px;
+    flex-grow: 1;
 }
 
 #contact form {
@@ -79,15 +55,11 @@ main {
     border-radius: 25px;
     background-color: #f9f9f9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    justify-content: inherit;
-    align-items: center;
     display: grid;
     place-items: left;
+    width: 100%;
     max-width: 750px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: auto auto;
 }
 
 form label {
