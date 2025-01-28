@@ -38,6 +38,12 @@ main {
 
 #about h2 {
     font-size: 25px;
+    place-self: center;
+}
+
+#projects h2 {
+    font-size: 25px;
+    place-self: center;
 }
 
 #contact {
@@ -49,9 +55,14 @@ main {
     flex-grow: 1;
 }
 
+#contact h2 {
+    font-size: 25px;
+    place-self: center;
+}
+
 #contact form {
     border: 5px solid #ccc;
-    padding: 20px;
+    padding: 50px;
     border-radius: 25px;
     background-color: #f9f9f9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -66,7 +77,6 @@ form label {
     text-align: start;
     margin-right: 10px;
     vertical-align: top;
-    max-width: 750px;
 }
 
 form input, form textarea {
@@ -162,7 +172,9 @@ li {
     color: white;
 }
 
-img {
+#MTU_Campus {
+    float: right;
+    margin:100px;
     border-radius: 25px;
     max-width: 50%;
     max-height:400px;
