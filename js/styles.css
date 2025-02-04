@@ -22,10 +22,8 @@ main {
     padding: 25px;
 }
 
-#home p {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;    
+#home about-paragraph {
+    float: left;
 }
 
 #home img {
@@ -34,9 +32,36 @@ main {
     margin-right: auto;
 }
 
+#home p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 #about h2 {
     font-size: 25px;
     place-self: center;
+}
+
+#about p {
+    font-size: 27.5px;
+}
+
+.first-section {
+    position: absolute;
+    width: 70%;
+    left: 20%;
+    padding: 20px;
+}
+
+.MTUCampus {
+    float: right;
+    margin-right: 100px;
+    margin-left: 100px;
+    border-radius: 25px;
+    max-width: 65%;
+    max-height:500px;
+    height: auto;
 }
 
 #projects h2 {
@@ -166,13 +191,4 @@ li {
 .nav-link:hover, .nav-link:focus {
     background-color: grey;
     color: white;
-}
-
-#MTU_Campus {
-    float: right;
-    margin:100px;
-    border-radius: 25px;
-    max-width: 50%;
-    max-height:400px;
-    height: auto;
 }
