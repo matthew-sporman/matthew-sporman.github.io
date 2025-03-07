@@ -6,6 +6,7 @@ body {
     font-family: "Space Mono", monospace;
     font-weight: 700;
     font-style: normal;
+    cursor: url("images/cursor.png"), auto;
 }
 
 main {
@@ -46,6 +47,17 @@ main {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
+}
+
+.profilePhoto {
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.profilePhoto:hover {
+    transform: translateY(-25px);
 }
 
 #about {
