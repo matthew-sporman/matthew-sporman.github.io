@@ -82,21 +82,15 @@ main {
 
 .Text {
     font-size: 25px;
-    overflow-wrap: break-word;
-    word-wrap: normal;
-    word-break: normal;
-    white-space: normal;
-    line-height: 1.6;
 }
 
 .MTUCampus {
-    float: right;
-    margin-right: 100px;
-    margin-left: 100px;
+    display: block;
     border-radius: 25px;
     max-width: 65%;
     max-height:500px;
     height: auto;
+    margin: auto;
 }
 
 #projects {
@@ -203,11 +197,9 @@ footer {
 }
 
 ul {
-    list-style-type: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
 }
 
 li {
