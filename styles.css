@@ -6,7 +6,6 @@ body {
     font-family: "Space Mono", monospace;
     font-weight: 700;
     font-style: normal;
-    cursor: url("images/cursor.png"), auto;
 }
 
 main {
