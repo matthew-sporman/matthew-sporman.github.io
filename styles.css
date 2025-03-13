@@ -234,3 +234,43 @@ li {
     background-color: grey;
     color: white;
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    #home h2 {
+        font-size: 50px;
+        margin: 50px auto 10px;
+        padding: 15px;
+    }
+
+    #home p {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .MTUCampus {
+        max-width: 100%;
+    }
+
+    form {
+        padding: 30px;
+    }
+
+    input[type="text"], input[type="email"] {
+        font-size: 14px;
+        padding: 15px 15px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    /* Additional mobile-specific tweaks can go here */
+}
