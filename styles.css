@@ -272,5 +272,23 @@ li {
         padding: 15px;
     }
 
-    /* Additional mobile-specific tweaks can go here */
+    .profilePhoto {
+        max-width: 80%;
+        margin: 20px auto;
+    }
+
+    #contact form {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    form input, form textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    form button {
+        padding: 15px;
+        font-size: 14px;
+    }
 }
