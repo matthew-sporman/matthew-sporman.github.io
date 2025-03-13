@@ -193,9 +193,11 @@ footer {
     display: flex;
     justify-content: center;
     padding: 20px;
-    background: lightskyblue;
     border-radius: 25px;
-    border: 2px ridge;
+}
+
+#nav .nav-link {
+    border: 4px solid;
 }
 
 ul {
@@ -234,7 +236,7 @@ li {
 
 .nav-link:hover, .nav-link:focus {
     background-color: grey;
-    color: white;
+    color: deepskyblue;
 }
 
 @media only screen and (max-width: 768px) {
