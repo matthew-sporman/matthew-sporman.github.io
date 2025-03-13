@@ -265,7 +265,15 @@ li {
     }
 
     #contact form {
-        max-width: 250px;
+        width: 100%;
+        max-width: 350px;
+        padding: 20px;
+        border-radius: 25px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: grid;
+        margin: auto;
+        box-sizing: border-box;
     }
 
     form input,
