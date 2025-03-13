@@ -266,8 +266,8 @@ li {
 
     #contact form {
         padding: 20px;
-        max-width: 100%;
-        margin: 0 30px;
+        max-width: 500px;
+        margin: auto auto;
     }
 
     form input,
