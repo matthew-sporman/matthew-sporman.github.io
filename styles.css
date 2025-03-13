@@ -260,7 +260,7 @@ li {
 
     form {
         padding: 30px;
-        max-width: 80%;
+        max-width: 50%;
     }
 
     input[type="text"], input[type="email"] {
