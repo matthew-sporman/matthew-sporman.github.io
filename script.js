@@ -25,17 +25,29 @@ document.addEventListener("DOMContentLoaded", function() {
         link.addEventListener('click', function(e) {
             e.preventDefault();  // Prevent the default anchor link behavior
 
+            // Remove the 'active' class from all links
+            navLinks.forEach(link => link.classList.remove('active'));
+
             // Hide all sections
             sections.forEach(section => section.style.display = "none");
 
             const targetId = link.getAttribute("href").substring(1);
 
             showSection(targetId);
+
+            // Add the 'active' class to the clicked link
+            link.classList.add('active');
         });
     });
 
     showSection("home");
 });
+
+// Initialize: Set the 'home' link as active on load
+const homeLink = document.querySelector('#nav .nav-link[href="#home"]');
+if (homeLink) {
+    homeLink.classList.add('active');
+}
 
 const validateEmail = (email) => {
     return email.match(
