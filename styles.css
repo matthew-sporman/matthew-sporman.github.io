@@ -70,7 +70,7 @@ main {
     margin: 10px;
 }
 
-.container {
+.about-container {
     width: 100%;
     max-width: 70%;
     margin: 0 auto;
@@ -101,6 +101,69 @@ main {
     font-size: 25px;
     place-self: center;
     margin: 10px;
+}
+.projects-container {
+    width: 330px;
+    min-width: 300px;
+    background: #D3D3D3;
+    border-radius: 25px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    display: flex;
+    margin: 15px;
+    min-height: 351px;
+    padding: 30px;
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.title {
+    color: #1E1E1E;
+    font-size: 24px;
+    font-weight: 600;
+    word-wrap: break-word;
+}
+.subtitle {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #757575;
+    font-size: 20px;
+    font-weight: 400;
+    word-wrap: break-word;
+    padding-bottom: 12px;
+    text-align: center;
+    width: 100%;
+}
+
+.description {
+    width: 100%;
+    min-height: 175px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 15px;
+}
+
+.description p {
+    text-align: center;
+    color: #1E1E1E;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px;
+    word-wrap: break-word;
 }
 
 #contact {
@@ -263,7 +326,7 @@ li {
         height: auto;
     }
 
-    .container {
+    .about-container {
         width: 90%;
     }
 
