@@ -6,6 +6,8 @@ body {
     font-family: "Space Mono", monospace;
     font-weight: 700;
     font-style: normal;
+    cursor: url(images/arrowhead-rounded-outline.svg) 12 12, auto;
+
 }
 
 main {
@@ -38,6 +40,7 @@ main {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    cursor: url('images/hover.svg') 12 12, pointer;
 }
 
 #home p {
@@ -46,15 +49,25 @@ main {
     font-weight: bold;
 }
 
-.profilePhoto {
+#profilePhotoContainer {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition-property: transform;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
+    margin: 0 auto;
 }
 
-.profilePhoto:hover {
+#profilePhotoContainer:hover {
     transform: translateY(-25px);
+}
+
+.profilePhoto {
+    text-align: center;
 }
 
 #about {
@@ -231,6 +244,7 @@ form button {
 
 form button:hover {
     background-color: grey;
+    cursor: url('images/hover.svg') 12 12, pointer;
 }
 
 input[type="text"], input[type="email"] {
@@ -296,6 +310,7 @@ li {
 .nav-link:hover, .nav-link:focus {
     background-color: lightgrey;
     color: deepskyblue;
+    cursor: url('images/hover.svg') 12 12, pointer;
 }
 
 .nav-link.active {
