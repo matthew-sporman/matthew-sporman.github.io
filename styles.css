@@ -84,7 +84,8 @@ main {
 
 #about h2 {
     font-size: 25px;
-    place-self: center;
+    display: flex;
+    justify-content: center;
     margin: 10px;
 }
 
@@ -117,7 +118,8 @@ main {
 
 #projects h2 {
     font-size: 25px;
-    place-self: center;
+    display: flex;
+    justify-content: center;
     margin: 10px;
 }
 
@@ -215,7 +217,8 @@ main {
 
 #contact h2 {
     font-size: 25px;
-    place-self: center;
+    display: flex;
+    justify-content: center;
     margin: 10px;
     padding-bottom: 20px;
 }
