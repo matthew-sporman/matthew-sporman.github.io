@@ -7,7 +7,18 @@ body {
     font-weight: 700;
     font-style: normal;
     cursor: url(images/arrowhead-rounded-outline.svg) 12 12, auto;
+    transition: background-color 0.3s ease, color 0.3s ease;
 
+}
+
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+#themeToggle {
+    border-radius: 25px;
+    cursor: url('images/hover.svg') 12 12, pointer;
 }
 
 main {
@@ -15,10 +26,8 @@ main {
 }
 
 #home {
-    overflow-y: auto;
     padding: 20px;
     flex-grow: 1;
-    max-height: calc(100vh - 250px);
 }
 
 #home h2 {
@@ -76,17 +85,8 @@ main {
 }
 
 #about {
-    overflow-y: auto;
     padding: 20px;
     flex-grow: 1;
-    max-height: calc(100vh - 250px);
-}
-
-#about h2 {
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    margin: 10px;
 }
 
 .about-container {
@@ -101,26 +101,17 @@ main {
 }
 
 .MTUCampus {
-    display: block;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
     border-radius: 25px;
-    max-width: 65%;
-    max-height:500px;
+    max-width: 40%;
     height: auto;
-    margin: auto;
 }
 
 #projects {
-    overflow-y: auto;
     padding: 20px;
     flex-grow: 1;
-    max-height: calc(100vh - 250px);
-}
-
-#projects h2 {
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    margin: 10px;
 }
 
 .projects-container {
@@ -133,15 +124,16 @@ main {
     align-items: center;
     display: flex;
     margin: 15px;
-    height: 350px;
     padding: 30px;
+    height: auto;
+    max-height: none;
 }
 
 .images_container {
+    height: 50%;
+    width: 50%;
     border-radius: 25px;
-    width: 624px;
-    height: 352px;
-    margin-left: 40px;
+    object-fit: cover;
 }
 
 .wrapping_container {
@@ -189,19 +181,26 @@ main {
 .description {
     width: 100%;
     min-height: 175px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    display: flex;
-    padding: 15px;
+    
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    text-align: center;
 }
 
 .description p {
-    text-align: center;
     color: #1E1E1E;
     font-size: 16px;
     font-weight: 400;
-    padding: 10px;
-    word-wrap: break-word;
+    max-width: 100%;
+    word-break: break-word;
+    margin: 0;       
 }
 
 #contact {
@@ -209,10 +208,8 @@ main {
     justify-content: center;
     align-items: center;
     margin: 10px;
-    overflow-y: auto;
     padding: 20px;
     flex-grow: 1;
-    max-height: calc(100vh - 250px);
 }
 
 #contact h2 {
@@ -275,6 +272,53 @@ form button:hover {
     cursor: url('images/hover.svg') 12 12, pointer;
 }
 
+/* Dark Mode Contact Section */
+body.dark-mode #contact {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode #contact h2 {
+    color: #f0f0f0;
+}
+
+body.dark-mode #contact form {
+    background-color: #2a2a2a;
+    border-color: #555;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    color: #f0f0f0;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+body.dark-mode form label {
+    color: #ddd;
+}
+
+body.dark-mode form input,
+body.dark-mode form textarea {
+    background-color: #3a3a3a;
+    color: #f0f0f0;
+    border-color: #666;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+body.dark-mode form input::placeholder,
+body.dark-mode form textarea::placeholder {
+    color: #bbb;
+}
+
+body.dark-mode form button {
+    background-color: #444;
+    color: #00B4D8;
+    border: 1px solid #666;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode form button:hover {
+    background-color: #555;
+    color: #ffffff;
+    cursor: url('images/hover.svg') 12 12, pointer;
+}
+
 footer {
     text-align: center;
     padding-bottom: 25px;
@@ -302,8 +346,8 @@ footer {
 }
 
 .nav-link:hover, .nav-link:focus {
-    background-color: lightgrey;
     color: deepskyblue;
+    background-color: lightgrey;
     cursor: url('images/hover.svg') 12 12, pointer;
 }
 
@@ -312,6 +356,20 @@ footer {
     color: deepskyblue;
     border: 4px solid #555;
     box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark mode overrides */
+body.dark-mode #nav .nav-link {
+    color: #f0f0f0;
+    border-color: #555;
+    background-color: #2a2a2a;
+}
+
+body.dark-mode #nav .nav-link:hover,
+body.dark-mode #nav .nav-link:focus {
+    color: #00B4D8;
+    background-color: #444;
+    cursor: url('images/hover.svg') 12 12, pointer;
 }
 
 
@@ -376,7 +434,11 @@ li {
     }
 
     .MTUCampus {
+        float: none;
+        display: block;
+        margin: 20px auto;
         max-width: 100%;
+        height: auto;
     }
 
     #contact form {

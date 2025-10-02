@@ -28,14 +28,15 @@
         <a class="nav-link" href="#about">About</a>
         <a class="nav-link" href="#projects">Projects</a>
         <a class="nav-link" href="#contact">Contact</a>
+</button>
     </nav>
 
     <!-- Main Content Section -->
     <main>
         <div class="main-container">
             <section id="home">
-                <h2 id = "home_h2_text">Welcome! I'm Matthew.</h2>
-                <p> Take a look around! </p>
+                <h2 id="home_h2_text"></h2>
+                <p id="home_intro"></p>
                 <div class="profilePhoto">
                     <div id = profilePhotoContainer>
                     <a href = "https://www.linkedin.com/in/matthew-sporman/">
@@ -46,7 +47,6 @@
             </section>
 
             <section id="about">
-                <h2>My Story</h2>
                     <div class="about-container">
                     <div class="Image">
                         <img id="MTU_Campus" src = "images/MTU_Campus.jpg" class="MTUCampus">
@@ -55,12 +55,14 @@
                         <div class="Text">
                             <h3>The Journey...</h3>
                         <p id="about-paragraph">
-                            I’m a passionate developer and upcoming graduate from Michigan Tech in Computer Science. I thrive on building well-designed products with technology. <br><br>
-                            I’ve worked on a variety of development projects, including: <br><br>
+                            I’m a passionate developer and upcoming Computer Science graduate from Michigan Technological University with a minor in Mathematical Sciences.
+                            I enjoy transforming ideas into well-designed, functional products that make a real impact.
+                            Here are a few highlights of my work: <br>
                             <ul>
-                            <li><strong>A full-stack shopping portal</strong></li>
-                            <li><strong>Enhancements to the Michigan Tech student portal interface</strong></li>
-                            <li><strong>A 3D FPS video game</strong></li> <br>
+                            <li><strong>A full-stack shopping portal.</strong></li>
+                            <li><strong>An AI-generated text detection tool in Python.</strong></li>
+                            <li><strong>A 3D multiplayer action game developed with the Husky Game Development Enterprise.</strong></li>
+                            <li><strong>A production website for Moffett Food Service, a local Flint business for over 150 years!</strong></li>
                         </ul>
                             I’m always looking for new challenges to expand my skills and explore new technologies. Let’s connect and build something amazing!
                             </p>
@@ -69,18 +71,21 @@
             </section>
 
             <section id="projects">
-                <h2>My Projects</h2>
                 <div class = "wrapping_container">
-                <div id="betterBanweb" class="projects-container">
-                    <div id="betterBanwebHeader" class="header">
-                        <div class="title">Better Banweb</div>
-                        <div class="subtitle">A Firefox Extension for MTU</div>
+                <div id="moffettFoodService" class="projects-container">
+                    <div id="moffettFoodServiceHeader" class="header">
+                        <div class="title">Moffett Food Service</div>
+                        <div class="subtitle">Business Website</div>
                     </div>
-                    <div id="betterBanwebDescription" class="description">
-                        <p>A revamped way to interact with the Michigan Tech Student Portal. Browse through all sections of the web-page without reload times, and utilize the ability to convert your transcript to PDF format with this browser extension for Firefox.</p>
+                    <div id="moffettFoodServiceDescription" class="description">
+                        <p>Moffett Food Service is one of the oldest family-owned
+                        businesses in Flint Michigan today; it is currently owned and run by
+                        the fifth generation of Moffett's. The Moffett family originated in
+                        Scotland. The founder, Samuel Moffett, arrived in Flint in 1865
+                        when he was just nine years old.</p>
                     </div>
                     </div>
-                    <img src = "images/BBB_homescreen.png" class="images_container">
+                    <img src = "images/moffett_website.png" class="images_container">
                 </div>
 
                 <div class = "wrapping_container">
@@ -94,6 +99,21 @@
                     </div>
                 </div>
                     <img src = "images/before_Login.png" class="images_container">
+                </div>
+
+                <div class = "wrapping_container">
+                <div id="AI_text_python" class="projects-container">
+                    <div id="AI_text_python_header" class="header">
+                        <div class="title">AI Text Detection Tool</div>
+                        <div class="subtitle">Python Project</div>
+                    </div>
+                    <div id="AI_text_python_description" class="description">
+                        <p>I developed a lightweight neural network that detects whether text was written by a human or generative AI.
+                            Using a dataset of human essays and AI-generated samples, the system outputs a probability score indicating AI likelihood.
+                            While focused on educational use cases, the tool is adaptable for professional contexts such as business reports or journalism.</p>
+                    </div>
+                </div>
+                    <img src = "images/python_AI.jpg" class="images_container">
                 </div>
             </section>
 
@@ -124,6 +144,9 @@
     <!-- Footer Section -->
     <footer>
         <div class = "footer-container">
+            <button id="themeToggle">
+                <img src="images/dark-mode-img.png" width = "30" height = "30">
+            </button>
             <p> &copy Matthew Sporman &#x2025 All rights reserved </p>
         </div>
     </footer>
