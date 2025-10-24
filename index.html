@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>My Portfolio</title>
+        <title>Portfolio</title>
 
         <!-- Space Mono Font API call -->
         <style>
@@ -39,7 +39,7 @@
                 <p id="home_intro"></p>
                 <div class="profilePhoto">
                     <div id = profilePhotoContainer>
-                    <a href = "https://www.linkedin.com/in/matthew-sporman/">
+                    <a href = "https://github.com/matthew-sporman/">
                     <img src = "images/profile-pic-work.png">
                     </a>
                     </div>
@@ -48,11 +48,11 @@
 
             <section id="about">
                     <div class="about-container">
-                    <div class="Image">
-                        <img id="MTU_Campus" src = "images/MTU_Campus.jpg" class="MTUCampus">
+                    <div class="MTU_Campus">
+                        <img class="MTU_Campus" src = "images/MTU_Campus.jpg">
                     </div>
 
-                        <div class="Text">
+                        <div class="about-Header-Text">
                             <h3>The Journey...</h3>
                         <p id="about-paragraph">
                             I’m a passionate developer and upcoming Computer Science graduate from Michigan Technological University with a minor in Mathematical Sciences.
@@ -62,7 +62,8 @@
                             <li><strong>A full-stack shopping portal.</strong></li>
                             <li><strong>An AI-generated text detection tool in Python.</strong></li>
                             <li><strong>A 3D multiplayer action game developed with the Husky Game Development Enterprise.</strong></li>
-                            <li><strong>A production website for Moffett Food Service, a local Flint business for over 150 years!</strong></li>
+                            <li><strong>A full-production website for Moffett Food Service, a local Flint business for over 150 years!</strong></li>
+                            <li><strong>A Vue.js site displaying curated drink recipes from the 24G team as part of a frontend interview project.</strong></li>
                         </ul>
                             I’m always looking for new challenges to expand my skills and explore new technologies. Let’s connect and build something amazing!
                             </p>
@@ -71,6 +72,21 @@
             </section>
 
             <section id="projects">
+                <div class = "wrapping_container">
+                <div id="onlineStorefront" class="projects-container">
+                    <div id="onlineStorefrontHeader" class="header">
+                        <div class="title">Drink Menu</div>
+                        <div class="subtitle">24G Front-end Test Project</div>
+                    </div>
+                    <div id="drinkMenu24GDescription" class="description">
+                        <p>This single-page application showcases popular drink recipes recommended by the 24G team.
+                            Built with Vue.js, the app emphasizes clean component structure, responsive design, and dynamic data rendering.
+                            Support is available for Desktop, Mobile, and Tablets!<br><a href = "https://drink-menu-24g.onrender.com">Check it out!</a></p>
+                    </div>
+                </div>
+                    <img src = "images/drink-menu.png" class="images_container">
+                </div>
+
                 <div class = "wrapping_container">
                 <div id="moffettFoodService" class="projects-container">
                     <div id="moffettFoodServiceHeader" class="header">
@@ -82,23 +98,10 @@
                         businesses in Flint Michigan today; it is currently owned and run by
                         the fifth generation of Moffett's. The Moffett family originated in
                         Scotland. The founder, Samuel Moffett, arrived in Flint in 1865
-                        when he was just nine years old.</p>
+                        when he was just nine years old.<br><a href = "https://moffett-food-service.onrender.com">Check it out!</a></p>
                     </div>
                     </div>
                     <img src = "images/moffett_website.png" class="images_container">
-                </div>
-
-                <div class = "wrapping_container">
-                <div id="onlineStorefront" class="projects-container">
-                    <div id="onlineStorefrontHeader" class="header">
-                        <div class="title">Online Storefront</div>
-                        <div class="subtitle">Databases Course Project</div>
-                    </div>
-                    <div id="onlineStorefrontDescription" class="description">
-                        <p>A shopping portal with a working shopping cart and employee page. Customers can view the catalog, and create orders using a unique user profile they create. Employees can manage and update stock and prices through the website too with their own login credentials.</p>
-                    </div>
-                </div>
-                    <img src = "images/before_Login.png" class="images_container">
                 </div>
 
                 <div class = "wrapping_container">
@@ -113,7 +116,20 @@
                             While focused on educational use cases, the tool is adaptable for professional contexts such as business reports or journalism.</p>
                     </div>
                 </div>
-                    <img src = "images/python_AI.jpg" class="images_container">
+                    <img src = "images/python_AI.png" class="images_container">
+                </div>
+                
+                <div class = "wrapping_container">
+                <div id="onlineStorefront" class="projects-container">
+                    <div id="onlineStorefrontHeader" class="header">
+                        <div class="title">Online Storefront</div>
+                        <div class="subtitle">Databases Course Project</div>
+                    </div>
+                    <div id="onlineStorefrontDescription" class="description">
+                        <p>A shopping portal with a working shopping cart and employee page. Customers can view the catalog, and create orders using a unique user profile they create. Employees can manage and update stock and prices through the website too with their own login credentials.</p>
+                    </div>
+                </div>
+                    <img src = "images/before_Login.png" class="images_container">
                 </div>
             </section>
 
